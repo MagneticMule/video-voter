@@ -1,0 +1,16 @@
+<template name="home">
+<head>
+  <title>The Videotron video-voter: {{title}}</title>
+</head>
+
+<div class="container">
+  <div class="video-container">
+    <h1>{{title}}</h1>
+    <hr>
+    {{> _video}}
+    {{> _controls}}
+    {{> _disqus}}
+  </div>
+  </div>
+
+</template>
