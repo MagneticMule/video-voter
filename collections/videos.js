@@ -1,3 +1,5 @@
+// Define the DB to store video links, title, etc
+// The actual video files will be stored and accessed on Dropbox
 Videos = new Mongo.Collection('videos');
 
 Videos.allow({
@@ -30,7 +32,9 @@ VideoSchema = new SimpleSchema({
   },
     videoId: {
         type: String,
-        label: "The Youtube ID of the Video"
+        label: "A 12 character string you can use to identiofy this video",
+        max: 12,
+        optional: false
     },
     hasHands: {
         type: Boolean,
