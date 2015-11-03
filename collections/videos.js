@@ -1,5 +1,7 @@
+
 // Define the DB to store video links, title, etc
-// The actual video files will be stored and accessed on Dropbox
+// The actual video files will be stored and accessed using Dropbox
+
 Videos = new Mongo.Collection('videos');
 
 Videos.allow({
@@ -32,7 +34,7 @@ VideoSchema = new SimpleSchema({
   },
     videoId: {
         type: String,
-        label: "A 12 character string you can use to identiofy this video",
+        label: "A 12 character string you can use to identify this video",
         max: 12,
         optional: false
     },
@@ -40,6 +42,17 @@ VideoSchema = new SimpleSchema({
         type: Boolean,
         label: "Does this video use hands? If so, tick here.",
         optional: true
+    },
+    topic: {
+        type: String,
+        label: "What subject matter does this video cover?",
+        allowedValues: ['multiplication','division'],
+        autoform: {
+            options: [
+                {label: "Mutliplication", value: "multiplication"},
+                {label: "Division", value: "division"}
+            ]
+        }
     },
     whoHasWatched: {
         type: [String],
@@ -49,3 +62,14 @@ VideoSchema = new SimpleSchema({
 });
 
 Videos.attachSchema( VideoSchema );
+
+
+/*
+// on success display a message to the administrator then display the admin page
+inputVideoForm.addHooks(['postInsert', 'postUpdate'], {
+  onSuccess: function(operation, result, template) {
+    toastr.success('Video added successfully', 'Hooray!');
+    Router.go("/admin");
+  }
+});
+*/
