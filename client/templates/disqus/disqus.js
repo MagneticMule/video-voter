@@ -1,4 +1,4 @@
-Template._disqus.rendered = function () {
+Template.disqus.rendered = function () {
 
 /** Disqus embed code **/
     (function() {  // DON'T EDIT BELOW THIS LINE

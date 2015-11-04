@@ -1,0 +1,15 @@
+<template name="video">
+  <div style="margin-bottom:25px;">
+    <video width="800" id="videoPlayer" controls preload="auto">
+      <source src="{{url}}" type="video/mp4">
+        Sorry, your browser isn't compatible with HTML5 video :(
+    </video>
+  </div>
+    <div class="well" style="text-align:center;">
+    <button style="margin-bottom:20px;" type="button" class="btn btn-success" id="btn-play-pause">
+      <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Play
+    </button>
+    <input id="seekBar" type="range" value="0"/>
+    {{currentPlayTime}}
+    </div>
+</template>
