@@ -14,12 +14,15 @@ Router.route('/', {
         this.render('home');
       }
     },
-    subscriptions: function () {
-        return Meteor.subscribe('videos');
-    },
-    data: function () {
+    data: function() {
         var currentUser = Meteor.userId();
-        return Videos.findOne({ whoHasWatched: { $ne: currentUser } } );
+        var currentVideo = Videos.findOne( {whoHasWatched: { $ne: currentUser } } );
+        Session.set('currentUser', currentUser);
+        Session.set('currentVideo', currentVideo);
+        return currentVideo;
+    },
+    waitOn: function() {
+        return Meteor.subscribe('videos');
     }
   });
 
@@ -38,7 +41,7 @@ Router.route('/admin', {
             this.render('inputVideoForm');
         }
     },
-        subsrciptions: function () {
+        subscriptions: function () {
         return Meteor.subscribe('videos');
     }
 });

@@ -15,20 +15,59 @@ Template.video.events = {
         btn = event.target;
         if (videoPlayer.paused) {
             videoPlayer.play();
+
+            // change the look of the button to it's pause state
             btn.className = ("btn btn-info");
             btn.textContent = ("Pause");
-            btn.children[0].className = ("glyphicon glyphicon-pause");
+            // btn.children[0].className = ("glyphicon glyphicon-pause");
+/*
+            Videos.update(this._id, {
+                $addToSet: { whoHasWatched: Session.get('currentUser')}
+            });
+*/
+
+            // record the interaction in the db
+            Interactions.insert({
+                title: "Play Pressed",
+                userId: Meteor.userId(), // the logged in user
+                videoId: this._id, // current video object
+                timeStamp: new Date(), // now
+                videoTime: Session.get('currentVideoTime')
+            });
         }
         else {
             videoPlayer.pause();
             btn.className = ("btn btn-success");
             btn.textContent = ("Play");
-            btn.span.className = ("glyphicon glyphicon-play");
+            // btn.firstChild.className = ("glyphicon glyphicon-play");
+
+            // record the interaction in the db
+            Interactions.insert({
+                title: "Pause Pressed",
+                userId: Meteor.userId(), // the logged in user
+                video: this._id, // the current video object
+                timeStamp: new Date(), // now
+                videoTime: Session.get('currentVideoTime')
+            });
         }
     },
     "timeupdate #videoPlayer" : function (event, template) {
-        seekBar.value = Math.floor(event.target.currentTime / videoPlayer.duration * 100);
-        console.log(Math.floor(event.target.currentTime));
+        seekBar.value = Math.floor((event.target.currentTime / videoPlayer.duration * 100));
+        console.log(Math.round(event.target.currentTime));
+        var currentVideoTime = Math.round(event.target.currentTime);
+        Session.set('currentVideoTime', currentVideoTime);
+    },
+    "change #seekBar" : function (event, template) {
+        videoPlayer.currentTime = Math.floor(event.target.value * videoPlayer.duration / 100);
+
+            // record the interaction in the db
+            Interactions.insert({
+                title: "Timebar Moved",
+                userId: Meteor.userId(), // the logged in user
+                video: this._id, // the current video object
+                timeStamp: new Date(), // now
+                videoTime: Session.get('currentVideoTime')
+            });
     }
 }
 
@@ -40,6 +79,9 @@ Template.video.events = {
 Template.video.helpers = {
     videoId: function() {
         var currentUser = Meteor.userId();
+        console.log("erm");
+        console.log(currentUser);
+        console.log(this);
         return Videos.findOne( {whoHasWatched: { $ne: currentUser } } );
     }
 }
