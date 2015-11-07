@@ -24,7 +24,7 @@ InteractionSchema = new SimpleSchema({
   },
   videoId: {
         type: String,
-        label: "The Video Object"
+        label: "The Video Id"
   },
   timeStamp: {
       type: Date,

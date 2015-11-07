@@ -30,7 +30,7 @@ Template.video.events = {
             Interactions.insert({
                 title: "Play Pressed",
                 userId: Meteor.userId(), // the logged in user
-                videoId: this._id, // current video object
+                videoId: Session.get('currentVideo')._id, // current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
             });
@@ -45,7 +45,7 @@ Template.video.events = {
             Interactions.insert({
                 title: "Pause Pressed",
                 userId: Meteor.userId(), // the logged in user
-                video: this._id, // the current video object
+                videoId: Session.get('currentVideo')._id, // the current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
             });
@@ -64,7 +64,7 @@ Template.video.events = {
             Interactions.insert({
                 title: "Timebar Moved",
                 userId: Meteor.userId(), // the logged in user
-                video: this._id, // the current video object
+                videoId: Session.get('currentVideo')._id, // the current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
             });
@@ -81,7 +81,14 @@ Template.video.helpers = {
         var currentUser = Meteor.userId();
         console.log("erm");
         console.log(currentUser);
-        console.log(this);
+        console.log(this._id);
         return Videos.findOne( {whoHasWatched: { $ne: currentUser } } );
+    },
+    currentVideoTime: function() {
+        console.log("CurrentVideoTime: " + Session.get('currentVideoTime'));
+        return Session.get('currentVideoTime');
+    },
+    videoDuration: function() {
+        return videoPlayer.duration;
     }
 }
