@@ -2,12 +2,12 @@ Router.route('/', {
   name: 'home',
   template: 'home',
   onBeforeAction: function(){
-      if (Meteor.userId()) {
+    /*  if (Meteor.userId()) {
         // if a user is logged in then continue
         this.next();
       } else {
           this.render('login');
-      }
+      } */
     },
     action: function () {
       if (this.ready()) {
@@ -15,9 +15,9 @@ Router.route('/', {
       }
     },
     data: function() {
-        var currentUser = Meteor.userId();
-        var currentVideo = Videos.findOne( {whoHasWatched: { $ne: currentUser } } );
-        Session.set('currentUser', currentUser);
+        // var currentUser = Meteor.userId();
+        // var currentVideo = Videos.findOne( {whoHasWatched: { $ne: currentUser } } );
+        //Session.set('currentUser', currentUser);
         Session.set('currentVideo', currentVideo);
         return currentVideo;
     },
