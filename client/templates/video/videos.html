@@ -1,7 +1,14 @@
 <template name="videos">
   <div class="container">
-    {{#each videos}}
-    {{video}}
-    {{/each}}
-  </div>
+   <div style="width:600px;font-size:36px;margin:auto;margin-top:80px;">
+      <ul style="list-style:none">
+        {{#each subjects}}
+        <div class="well">
+          <li><a href="subject/{{linkname}}">{{title}}</a></li>
+          </div>
+        {{/each}}
+      </ul>
+        {{> footer}}
+   </div>
+    </div>
 </template>

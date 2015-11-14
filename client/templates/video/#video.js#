@@ -45,7 +45,7 @@ Template.video.events = {
             Interactions.insert({
                 title: "Pause Pressed",
                 userId: Session.get('currentUser'), // the logged in user
-                videoId: Session.get('currentVideo'), // the current video object
+                videoId: Session.get(', // the current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
             });

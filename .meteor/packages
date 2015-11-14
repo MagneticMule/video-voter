@@ -16,12 +16,6 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-accounts-base
-accounts-password
-
-useraccounts:bootstrap
-
-ian:accounts-ui-bootstrap-3
 twbs:bootstrap
 
 meteortoys:allthings
@@ -35,3 +29,8 @@ aldeed:autoform
 chrismbeckett:toastr
 jparker:crypto-md5
 
+u2622:persistent-session
+
+accounts-base
+accounts-password
+useraccounts:bootstrap

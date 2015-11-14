@@ -46,10 +46,11 @@ VideoSchema = new SimpleSchema({
     topic: {
         type: String,
         label: "What subject matter does this video cover?",
-        allowedValues: ['multiplication','division'],
+        allowedValues: ['multiplication', 'multiplication2', 'division'],
         autoform: {
             options: [
                 {label: "Mutliplication", value: "multiplication"},
+                {label: "Mutliplication 2", value: "multiplication2"},
                 {label: "Division", value: "division"}
             ]
         }
@@ -57,6 +58,11 @@ VideoSchema = new SimpleSchema({
     whoHasWatched: {
         type: [String],
         label: "The _id's of the folk who have already watched this video",
+        optional: true
+    },
+    lastWatched: {
+        type: Number,
+        label: "How many times has this video been watched",
         optional: true
     }
 });

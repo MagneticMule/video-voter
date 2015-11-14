@@ -1,7 +1,8 @@
 Router.route('/', {
-  name: 'home',
-  template: 'home',
-  onBeforeAction: function(){
+  name: 'videos',
+  template: 'videos',
+    onBeforeAction: function(){
+        this.next();
     /*  if (Meteor.userId()) {
         // if a user is logged in then continue
         this.next();
@@ -11,18 +12,14 @@ Router.route('/', {
     },
     action: function () {
       if (this.ready()) {
-        this.render('home');
+        this.render('videos');
       }
     },
     data: function() {
-        // var currentUser = Meteor.userId();
-        // var currentVideo = Videos.findOne( {whoHasWatched: { $ne: currentUser } } );
-        //Session.set('currentUser', currentUser);
-        Session.set('currentVideo', currentVideo);
-        return currentVideo;
-    },
-    waitOn: function() {
-        return Meteor.subscribe('videos');
+        var currentUser = Date.now() + (Math.random() * ((10 - 1) + 1)).toString();
+        Session.setPersistent('currentUser', currentUser);
+        console.log(currentUser.toString());
+        return Videos.find();
     }
   });
 
@@ -43,6 +40,25 @@ Router.route('/admin', {
     },
         subscriptions: function () {
         return Meteor.subscribe('videos');
+    }
+});
+
+Router.route('/subject/:_topic', {
+    name: 'subject',
+    template: 'home',
+    data: function () {
+        console.log('Data is being rendered');
+        var hasHands = Math.random() > 0.5 ? true : false;
+        console.log( hasHands );
+        var video = Videos.findOne({ topic: this.params._topic,
+                                     hasHands: hasHands } );
+        Session.setPersistent('currentVideo', video._id);
+        return video;
+    },
+        action: function() {
+        if (this.ready()) {
+            this.render('home');
+        }
     }
 });
 

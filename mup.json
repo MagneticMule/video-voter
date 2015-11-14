@@ -10,7 +10,7 @@
 
   "setupMongo": true,
   "appName": "videotron",
-    "app": "/Volumes/Experiment Partition/repositories/video-voter",
+  "app": "/Volumes/Experiment Partition/repositories/video-voter",
 
   "env": {
     "PORT": 80,

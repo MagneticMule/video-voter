@@ -4,5 +4,8 @@ Meteor.publish(
     },
     'interactions', function() {
         return Interactions.find();
+    },
+    'comments', function() {
+        return Comments.find();
     }
 );
