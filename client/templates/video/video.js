@@ -1,16 +1,36 @@
-
 Template.video.onRendered = {
-        videoPlayer: function() {
-            var v = document.getElementById('videoPlayer');
-            return v;
-        },
+    videoPlayer: function() {
+        var v = document.getElementById('videoPlayer');
+        return v;
+    },
     seekBar: function() {
         var s = document.getElementById('seekbar');
         return s;
     }
-}
+
+
+},
 
 Template.video.events = {
+    "waiting #videoPlayer" : function (event, template) {
+        // document.getElementById('placeholder').style.display = "block";
+
+    },
+
+
+    "canplay #videoPlayer" : function (event, template) {
+        // document.getElementById('placeholder').style.display = "none";
+        var playButton = document.getElementById('btn-play-pause');
+        playButton.style.className = ("btn btn-success");
+        playButton.textContent = " Play";
+        console.log('canplay');
+    },
+
+    "playing #videoPlayer" : function (event) {
+        // document.getElementById('placeholder').style.display = "none";
+        console.log('playing');
+    },
+
     "click #btn-play-pause" : function (event, template) {
         btn = event.target;
         if (videoPlayer.paused) {
@@ -27,10 +47,11 @@ Template.video.events = {
 */
 
             // record the interaction in the db
+
             Interactions.insert({
                 title: "Play Pressed",
-                userId: Session.get('currentUser'), // the logged in user
-                videoId: Session.get('currentVideo')._id, // current video object
+                userId: getCurrentUser, // the logged in user
+                videoId: Session.get('currentVideo'), // current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
             });
@@ -44,7 +65,7 @@ Template.video.events = {
             // record the interaction in the db
             Interactions.insert({
                 title: "Pause Pressed",
-                userId: Session.get('currentUser'), // the logged in user
+                userId: getCurrentUser, // the logged in user
                 videoId: Session.get('currentVideo'), // the current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
@@ -63,19 +84,15 @@ Template.video.events = {
             // record the interaction in the db
             Interactions.insert({
                 title: "Timebar Moved",
-                userId: Session.get('currentUser'), // the logged in user
+                userId: getCurrentUser, // the logged in user
                 videoId: Session.get('currentVideo'), // the current video object
                 timeStamp: new Date(), // now
                 videoTime: Session.get('currentVideoTime')
             });
     }
-}
+},
 
-/**
-* Return a videoId that the user has not seen before
-* $nin is a Mongo comparison function for arrays-we actually didn’t use it here in the end but it is worth keeping a note of for similar situations.
-* $ne
-**/
+
 Template.video.helpers = {
     videoId: function() {
         return Videos.findOne();
@@ -87,4 +104,15 @@ Template.video.helpers = {
     videoDuration: function() {
         return videoPlayer.duration;
     }
-}
+};
+
+
+function getCurrentUser() {
+        var c = Session.get('currentUser');
+        if (!c) {
+            c = Date.now() + (Math.random() * ((10 - 1) + 1)).toString();
+            Session.setPersistent('currentUser', c);
+        }
+        console.log(c.toString());
+        return c.toString();
+};

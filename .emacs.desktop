@@ -1,0 +1,272 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Nov 15 17:43:10 2015
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22088 50222 69983 0) (desktop . "206") "tommy@Thomass-MBP.home" nil nil ((((font-backend mac-ct ns) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (line-spacing) (left-fringe . 0) (right-fringe . 14) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (border-color . "#37474f") (cursor-color . "#ff9800") (frameset--id . "A2DD-9068-8D62-27BF") (frameset--mini nil . "0F13-B4DE-343B-EAE5") (height . 69) (width . 41) (modeline . t) (minibuffer) (unsplittable . t) (left . 64) (top . 28) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "Thomass-MBP.home") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 28) (min-pixel-width-ignore . 28) (min-pixel-height-safe . 14) (min-pixel-width-safe . 14)) leaf (last . t) (pixel-width . 301) (pixel-height . 966) (total-width . 43) (total-height . 69) (normal-height . 1.0) (normal-width . 1.0) (buffer " SPEEDBAR" (selected) (hscroll . 0) (fringes 10 1 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated . t) (point . 102) (start . 1))) (((font-backend mac-ct ns) (fontsize . 0) (font . "-*-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (foreground-color . "#ffffff") (background-color . "#263238") (line-spacing) (left-fringe . 9) (right-fringe . 9) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha) (fullscreen) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#ff9800") (environment) (border-color . "#37474f") (frameset--id . "0F13-B4DE-343B-EAE5") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "Thomass-MBP.home") (explicit-name) (tool-bar-position . top) (height . 54) (width . 167) (left . 374) (top . 28)) ((min-height . 8) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 144) (min-pixel-width . 180) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 72) (min-pixel-height-safe . 36) (min-pixel-width-safe . 36)) hc (pixel-width . 1521) (pixel-height . 954) (total-width . 169) (total-height . 53) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 794) (pixel-height . 954) (total-width . 88) (total-height . 53) (normal-height . 1.0) (normal-width . 0.5247851949768672) (buffer "video.js" (selected) (hscroll . 0) (fringes 10 1 nil) (margins 5) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 1191) (start . 1))) (vc (last . t) (pixel-width . 727) (pixel-height . 954) (total-width . 81) (total-height . 53) (normal-height . 1.0) (normal-width . 0.4752148050231332) (combination-limit) (leaf (pixel-width . 727) (pixel-height . 470) (total-width . 81) (total-height . 26) (normal-height . 0.4915966386554622) (normal-width . 1.0) (buffer "video.html" (selected . t) (hscroll . 0) (fringes 10 1 nil) (margins 5) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 98) (start . 1))) (leaf (last . t) (pixel-width . 727) (pixel-height . 484) (total-width . 81) (total-height . 27) (normal-height . 0.5084033613445378) (normal-width . 1.0) (buffer "video.css" (selected) (hscroll . 0) (fringes 10 1 nil) (margins 5) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 67) (start . 1))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("tabbar"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/Users/tommy/repositories/video-voter/client/templates/video/videos.html" "/Users/tommy/repositories/video-voter/client/templates/video/video.html" "/Users/tommy/repositories/video-voter/client/templates/home/home.html" "/Users/tommy/repositories/video-voter/client/stylsheets/video.css" "/Users/tommy/repositories/video-voter/client/templates/video/video.html" "/Users/tommy/repositories/video-voter/collections/interactions.js" "/Users/tommy/repositories/video-voter/client/templates/interactions/interactions.js" "/Users/tommy/repositories/video-voter/client/templates/interactions/interactions.html" "/Users/tommy/repositories/video-voter/client/templates/login/login.html" "/Users/tommy/repositories/video-voter/client/templates/interactions/interactions.html" "/Users/tommy/repositories/video-voter/.meteor/packages" "/Users/tommy/repositories/video-voter/routes/main.js" "/Users/tommy/repositories/video-voter/client/templates/.DS_Store" "/Users/tommy/repositories/video-voter/client/templates/home/home.html" "/Users/tommy/repositories/video-voter/client/templates/video/videos.html" "/Users/tommy/repositories/video-voter/client/templates/comments/comments.html" "/Users/tommy/repositories/video-voter/client/templates/comments/comments.js" "/Users/tommy/repositories/video-voter/collections/comments.js" "/Users/tommy/repositories/video-voter/client/templates/video/videos.js" "/Users/tommy/repositories/video-voter/.meteor/packages" "/Users/tommy/repositories/video-voter/client/templates/video/videos.html"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/video/video.html"
+  "video.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  98
+  '(353 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/stylsheets/video.css"
+  "video.css"
+  'css-mode
+  '(visual-line-mode yas/minor-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  67
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/video/video.js"
+  "video.js"
+  'js2-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode tern-mode)
+  1191
+  '(2288 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/home/home.html"
+  "home.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  269
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/video/videos.html"
+  "videos.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  390
+  '(335 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/subscriptions.js"
+  "subscriptions.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  93
+  '(93 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/settings.json"
+  "settings.json"
+  'json-mode
+  '(visual-line-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  151
+  '(151 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/readme.md"
+  "readme.md"
+  'markdown-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  468
+  '(387 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/comments/comments.html"
+  "comments.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode emmet-mode)
+  437
+  '(437 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/video/videos.js"
+  "videos.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  375
+  '(197 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/login/login.html"
+  "login.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  389
+  '(186 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/collections/comments.js"
+  "comments.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  649
+  '(410 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/collections/videolist.js"
+  "videolist.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/video/inputVideoForm.html"
+  "inputVideoForm.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  149
+  '(104 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/routes/main.js"
+  "main.js"
+  'js2-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode tern-mode)
+  1045
+  '(430 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/interactions/interactions.html"
+  "interactions.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode tern-mode)
+  178
+  '(85 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/interactions/interactions.js"
+  "interactions.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  131
+  '(131 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/collections/videos.js"
+  "videos.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  1168
+  '(658 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/collections/interactions.js"
+  "interactions.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  586
+  '(615 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/comments/comments.js"
+  "comments.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  576
+  '(547 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/server/publications.js"
+  "publications.js"
+  'js-mode
+  '(visual-line-mode auto-complete-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  227
+  '(227 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/mup.json"
+  "mup.json"
+  'json-mode
+  '(visual-line-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode js2-minor-mode)
+  197
+  '(199 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/Users/tommy/repositories/video-voter/client/templates/video/common/footer.html"
+  "footer.html"
+  'html-mode
+  '(visual-line-mode yas/minor-mode workgroups-mode helm-mode flycheck-mode guide-key-mode projectile-mode linum-mode)
+  407
+  '(54 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines)))
+

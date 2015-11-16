@@ -34,3 +34,4 @@ u2622:persistent-session
 accounts-base
 accounts-password
 useraccounts:bootstrap
+kadira:debug
