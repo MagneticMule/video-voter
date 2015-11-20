@@ -1,6 +1,10 @@
 <template name="interactions">
+  <h1>Interactions</h1>
   {{#each interactions}}
-  {{_id}}
-  {{title}}
+  {{> title}}
+  {{userId}}
+  {{videoId}}
+  {{timeStamp}}
+  {{videoTime}}
   {{/each}}
 </template>
