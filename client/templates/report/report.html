@@ -1,0 +1,16 @@
+<template name="report">
+    <div class="container">
+        <h1>Interactions</h1>
+        {{#each reports}}
+            <hr>
+        <ul>
+            <li>What happened: <b>{{title}}</b></li>
+            <li>Who did it: <b>{{userId}}</b></li>
+            <li>What video: <b>{{videoId}}</b></li>
+            <li>When: <b>{{timeStamp}}</b></li>
+            <li>What point in the video: <b>{{videoTime}} Seconds</b></li>
+        </ul>
+
+        {{/each}}
+    </div>
+</template>

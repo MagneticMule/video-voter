@@ -1,6 +1,6 @@
 Template.videos.helpers({
     videos: function () {
-        return Videos.find();
+        return Videos.find({});
     },
     subjects: function () {
         var titles = [
